@@ -1,0 +1,402 @@
+{
+	"id": "58ad9b9a-6794-4896-bf41-41add7391e4f",
+	"name": "Trello",
+	"timestamp": "2021-12-23T07:08:52.814Z",
+	"collection_id": "18855921-0e1b27d0-7526-4c29-a170-50ecab7f913b",
+	"folder_id": 0,
+	"environment_id": "3f4c37c0-72ae-4a89-af8d-927f8678d150",
+	"totalPass": 22,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "51ad0c0e-aa72-477a-8514-ca190635f4bf",
+			"name": "CREATE Board",
+			"url": "https://api.trello.com/1/boards/?name=My%20Board%205&key=e812196d03c6175edf6b0cb8c219361c&token=2cfe8b515f2f61c03d177068d26ea7ce843a3a12bddaea333cd2daebb034015f&defaultLists=false",
+			"time": 720,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Board should be Created": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Board should be Created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				720
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Board should be Created": true
+				}
+			]
+		},
+		{
+			"id": "6b3c9035-3f61-4d38-bc1e-4c0ef389314a",
+			"name": "CREATE List Todo",
+			"url": "https://api.trello.com/1/boards/61c42087e681626317455a20/lists/?name=ToDo&key=e812196d03c6175edf6b0cb8c219361c&token=2cfe8b515f2f61c03d177068d26ea7ce843a3a12bddaea333cd2daebb034015f",
+			"time": 438,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"List name should be ToDo": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"List name should be ToDo": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				438
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"List name should be ToDo": true
+				}
+			]
+		},
+		{
+			"id": "af7cf80f-40a6-4b40-b708-7260f17743fc",
+			"name": "CREATE List Done",
+			"url": "https://api.trello.com/1/boards/61c42087e681626317455a20/lists/?name=Done&key=e812196d03c6175edf6b0cb8c219361c&token=2cfe8b515f2f61c03d177068d26ea7ce843a3a12bddaea333cd2daebb034015f",
+			"time": 473,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"List name should be Done": true,
+				"List should be in current Board": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"List name should be Done": {
+					"pass": 1,
+					"fail": 0
+				},
+				"List should be in current Board": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				473
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"List name should be Done": true,
+					"List should be in current Board": true
+				}
+			]
+		},
+		{
+			"id": "318d636f-cb98-4302-9001-b8b82a8fd2d5",
+			"name": "GET List",
+			"url": "https://api.trello.com/1/boards/61c42087e681626317455a20/lists/?key=e812196d03c6175edf6b0cb8c219361c&token=2cfe8b515f2f61c03d177068d26ea7ce843a3a12bddaea333cd2daebb034015f",
+			"time": 369,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				369
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "51825d95-c7e7-4483-a103-094d970ea3a5",
+			"name": "CREATE Card",
+			"url": "https://api.trello.com/1/cards/?name=Learn%20Postman&key=e812196d03c6175edf6b0cb8c219361c&token=2cfe8b515f2f61c03d177068d26ea7ce843a3a12bddaea333cd2daebb034015f&desc=This%20is%20just%20a%20demo&idList=61c42088152fe282f28c72c2",
+			"time": 484,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Card should be Created": true,
+				"Card should be in current ToDo List": true,
+				"Votes and attachments should be zero": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Card should be Created": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Card should be in current ToDo List": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Votes and attachments should be zero": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				484
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Card should be Created": true,
+					"Card should be in current ToDo List": true,
+					"Votes and attachments should be zero": true
+				}
+			]
+		},
+		{
+			"id": "8e61b33e-6e14-4a12-a9d0-d3b229f1836a",
+			"name": "UPDATE Card",
+			"url": "https://api.trello.com/1/cards/61c4208a4b28931ec9802a69/?key=e812196d03c6175edf6b0cb8c219361c&token=2cfe8b515f2f61c03d177068d26ea7ce843a3a12bddaea333cd2daebb034015f&idList=61c4208842eac511458508c3",
+			"time": 1034,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Card should be Updated": true,
+				"Card should be in Done List": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Card should be Updated": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Card should be in Done List": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1034
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Card should be Updated": true,
+					"Card should be in Done List": true
+				}
+			]
+		},
+		{
+			"id": "2035491a-db6f-44e8-a395-3de658c23ca3",
+			"name": "GET Card",
+			"url": "https://api.trello.com/1/cards/61c4208a4b28931ec9802a69?key=e812196d03c6175edf6b0cb8c219361c&token=2cfe8b515f2f61c03d177068d26ea7ce843a3a12bddaea333cd2daebb034015f",
+			"time": 429,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Description is not Empty": true,
+				"Members voted should be NULL": true
+			},
+			"testPassFailCounts": {
+				"Description is not Empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Members voted should be NULL": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				429
+			],
+			"allTests": [
+				{
+					"Description is not Empty": true,
+					"Members voted should be NULL": true
+				}
+			]
+		},
+		{
+			"id": "da9fd3e9-df99-4132-968f-f23194545f11",
+			"name": "DELETE Board",
+			"time": 835,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				1173,
+				539,
+				572,
+				631,
+				835
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "5e5cdc78-9f79-4450-ab16-3ddcec5b6874",
+			"name": "GET Boards",
+			"time": 509,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				704,
+				355,
+				378,
+				480,
+				509
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 10123,
+	"collection": {
+		"requests": [
+			{
+				"id": "51ad0c0e-aa72-477a-8514-ca190635f4bf",
+				"method": "POST"
+			},
+			{
+				"id": "6b3c9035-3f61-4d38-bc1e-4c0ef389314a",
+				"method": "POST"
+			},
+			{
+				"id": "af7cf80f-40a6-4b40-b708-7260f17743fc",
+				"method": "POST"
+			},
+			{
+				"id": "318d636f-cb98-4302-9001-b8b82a8fd2d5",
+				"method": "GET"
+			},
+			{
+				"id": "51825d95-c7e7-4483-a103-094d970ea3a5",
+				"method": "POST"
+			},
+			{
+				"id": "8e61b33e-6e14-4a12-a9d0-d3b229f1836a",
+				"method": "PUT"
+			},
+			{
+				"id": "2035491a-db6f-44e8-a395-3de658c23ca3",
+				"method": "GET"
+			},
+			{
+				"id": "da9fd3e9-df99-4132-968f-f23194545f11",
+				"method": "DELETE"
+			},
+			{
+				"id": "5e5cdc78-9f79-4450-ab16-3ddcec5b6874",
+				"method": "GET"
+			},
+			{
+				"id": "da9fd3e9-df99-4132-968f-f23194545f11",
+				"method": "DELETE"
+			},
+			{
+				"id": "5e5cdc78-9f79-4450-ab16-3ddcec5b6874",
+				"method": "GET"
+			},
+			{
+				"id": "da9fd3e9-df99-4132-968f-f23194545f11",
+				"method": "DELETE"
+			},
+			{
+				"id": "5e5cdc78-9f79-4450-ab16-3ddcec5b6874",
+				"method": "GET"
+			},
+			{
+				"id": "da9fd3e9-df99-4132-968f-f23194545f11",
+				"method": "DELETE"
+			},
+			{
+				"id": "5e5cdc78-9f79-4450-ab16-3ddcec5b6874",
+				"method": "GET"
+			},
+			{
+				"id": "da9fd3e9-df99-4132-968f-f23194545f11",
+				"method": "DELETE"
+			},
+			{
+				"id": "5e5cdc78-9f79-4450-ab16-3ddcec5b6874",
+				"method": "GET"
+			}
+		]
+	}
+}
